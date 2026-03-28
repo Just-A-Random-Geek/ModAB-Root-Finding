@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\proek\Documents\GitHub\Numerical\Numerical-ROOT-CPP\root_benchmark.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\proek\Documents\GitHub\Numerical\Numerical-ROOT-CPP\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0F9CB6E3-CBDC-3C24-9BD7-185DCB2CA4FF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,112 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\proek\\Documents\\GitHub\\Numerical\\ModAB-Root-Finding\\ModAB-C#\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D86CD31-B682-4970-985E-7E0AD019C14C}|Numerical.Benchmark\\Numerical.Benchmark.csproj|c:\\users\\proek\\documents\\github\\numerical\\modab-root-finding\\modab-c#\\numerical.benchmark\\numerical.benchmark.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6D86CD31-B682-4970-985E-7E0AD019C14C}|Numerical.Benchmark\\Numerical.Benchmark.csproj|solutionrelative:numerical.benchmark\\numerical.benchmark.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DD0687D-FF8C-43B6-9334-410EBBF3B760}|Numerical\\Numerical.csproj|c:\\users\\proek\\documents\\github\\numerical\\modab-root-finding\\modab-c#\\numerical\\numerical.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9DD0687D-FF8C-43B6-9334-410EBBF3B760}|Numerical\\Numerical.csproj|solutionrelative:numerical\\numerical.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c93a910a-0fa6-4307-93a4-f2bd61ec7828}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6d4078d1-5951-4ed1-ac0e-0a8099c1cce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Numerical.Benchmark",
+              "DocumentMoniker": "C:\\Users\\proek\\Documents\\GitHub\\Numerical\\ModAB-Root-Finding\\ModAB-C#\\Numerical.Benchmark\\Numerical.Benchmark.csproj",
+              "RelativeDocumentMoniker": "Numerical.Benchmark\\Numerical.Benchmark.csproj",
+              "ToolTip": "C:\\Users\\proek\\Documents\\GitHub\\Numerical\\ModAB-Root-Finding\\ModAB-C#\\Numerical.Benchmark\\Numerical.Benchmark.csproj",
+              "RelativeToolTip": "Numerical.Benchmark\\Numerical.Benchmark.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-27T21:10:01.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Numerical",
+              "DocumentMoniker": "C:\\Users\\proek\\Documents\\GitHub\\Numerical\\ModAB-Root-Finding\\ModAB-C#\\Numerical\\Numerical.csproj",
+              "RelativeDocumentMoniker": "Numerical\\Numerical.csproj",
+              "ToolTip": "C:\\Users\\proek\\Documents\\GitHub\\Numerical\\ModAB-Root-Finding\\ModAB-C#\\Numerical\\Numerical.csproj",
+              "RelativeToolTip": "Numerical\\Numerical.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-27T21:09:21.698Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 841,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
