@@ -16,15 +16,19 @@ import math
 from pymodab import find_root, find_default, get_evaluation_count
 
 # Find the root of cos(x) - x = 0 in [0, 1]
-root = find_root(lambda x: math.cos(x) - x, 0, 1, 100)
+root = find_root(lambda x: math.cos(x) - x, 0, 1, 1e-3, 1e-3, 10)
 print(f"Root: {root}")  # 0.7390851332151607
-
-# Using default tolerances
-root = find_default(lambda x: x**2 - 2, 1, 2)
-print(f"sqrt(2) = {root}")  # 1.4142135623730951
 
 # Get the number of function evaluations
 print(f"Evaluations: {get_evaluation_count()}")
+# Aproximation error
+print(f"Error:       {math.cos(root) - root}")
+
+# Using default tolerances
+root = find_root(lambda x: x**2 - 2, 1, 2)
+print(f"sqrt(2) = {root}")  # 1.4142135623730951
+print(f"Evaluations: {get_evaluation_count()}")
+print(f"Error:       {root**2 - 2}")
 ```
 
 ### API
@@ -41,10 +45,6 @@ Find the root of `f(x) = 0` within the interval `[x1, x2]`.
 - `max_iter`: Maximum iterations (default: 200)
 
 **Returns:** The root, or `NaN` if not found.
-
-### `find_default(f, x1, x2)`
-
-Convenience wrapper for `find_root` with default tolerances.
 
 #### `get_evaluation_count()`
 
