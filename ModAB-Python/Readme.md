@@ -1,0 +1,99 @@
+# PyModAB
+
+A fast and robust root-finding library using the Modified Anderson-Bjork method (Ganchovski, Traykov), written in C for Python.
+
+
+## Installation
+
+```bash
+pip install pymodab
+```
+
+## Usage
+
+```python
+import math
+from pymodab import find_root, find_default, get_evaluation_count
+
+# Find the root of cos(x) - x = 0 in [0, 1]
+root = find_root(lambda x: math.cos(x) - x, 0, 1, 100)
+print(f"Root: {root}")  # 0.7390851332151607
+
+# Using default tolerances
+root = find_default(lambda x: x**2 - 2, 1, 2)
+print(f"sqrt(2) = {root}")  # 1.4142135623730951
+
+# Get the number of function evaluations
+print(f"Evaluations: {get_evaluation_count()}")
+```
+
+## API
+
+### `find_root(f, x1, x2, atol=1e-14, rtol=1e-14, max_iter=200)`
+
+Find the root of `f(x) = 0` within the interval `[x1, x2]`.
+
+**Parameters:**
+- `f`: A continuous function of one variable
+- `x1`, `x2`: Bracket interval endpoints (must satisfy `f(x1) * f(x2) < 0`)
+- `atol`: Absolute tolerance (default: 1e-14)
+- `rtol`: Relative tolerance (default: 1e-14)
+- `max_iter`: Maximum iterations (default: 200)
+
+**Returns:** The root, or `NaN` if not found.
+
+### `find_default(f, x1, x2)`
+
+Convenience wrapper for `find_root` with default tolerances.
+
+### `get_evaluation_count()`
+
+Returns the number of function evaluations from the last root-finding call.
+
+## Algorithm
+
+Modified Anderson-Björck's method is a new robust and efficient bracketing root-finding algorithm. It combines bisection with Anderson-Björk's method to achieve both fast performance and worst-case optimality.
+
+References:
+
+Ganchovski N.; Traykov A. Modified Anderson-Björck's method for solving non-linear equations in structural mechanics. IOP Conference Series: Materials Science and Engineering 2023, 1276 (1) 012010, IOP Publishing. 
+https://iopscience.iop.org/article/10.1088/1757-899X/1276/1/012010/pdf
+
+Ganchovski, N.; Smith, O.; Rackauckas, C.; Tomov, L.; Traykov, A. Improvements of the Modified Anderson-Björck (modAB) Root-Finding Algorithm. Preprints 2026, 2026032190.
+https://www.preprints.org/manuscript/202603.2190
+
+## License
+
+MIT License
+
+### Benchmark results
+
+#### Function evaluations
+
+  Func|   bisect|   brentq|   brenth|   ridder|   chandr|    modAB|
+----- | ------: | ------: | ------: | ------: | ------: | ------: |
+   SUM|     4411|     2548|     2512|     3158|     1873|     1758|
+   AVG|       48|       28|       27|       34|       20|       19|
+MEDIAN|       49|       12|       12|       16|       12|       12|
+   MIN|        3|        4|        4|        4|        3|        3|
+   MAX|       53|      102|      102|      202|       58|       56|
+FACTOR|   2.509x|   1.449x|   1.429x|   1.796x|   1.065x|   1.000x|
+
+#### Execution times  (ms per problem, 100 iterations)
+
+  Func|   bisect|   brentq|   brenth|   ridder|   chandr|    modAB|
+----- | ------: | ------: | ------: | ------: | ------: | ------: |
+   SUM|  1266.30|   797.21|   800.98|   921.14| 48639.60|   145.55|
+   AVG|  13.7641|   8.6654|   8.7063|  10.0124| 528.6913|   1.5820|
+MEDIAN|  13.8022|   4.5878|   4.3595|   5.6256| 306.4098|   1.2803|
+   MIN|   1.4287|   1.7302|   1.6219|   1.3884|  72.9172|   0.6143|
+   MAX|  21.8886|  36.7684|  50.2981|  54.4431|1542.8365|   4.3991|
+FACTOR|   8.700x|   5.477x|   5.503x|   6.329x| 334.189x|   1.000x|
+
+Notes:
+Run on: 02.04.2026
+Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz (1.50 GHz) with 16.0 GB RAM
+Windows 11 Home
+numpy Version: 2.4.4
+scipy Version: 1.17.1
+pymodab Version: 1.0.0
