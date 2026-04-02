@@ -1,6 +1,6 @@
 ## PyModAB root-finding library
 
-A fast and robust root-finding library for Python using the Modified Anderson-Bjork method (Ganchovski & Traykov, 2023), written in C.
+A fast and robust root-finding library for Python, using the Modified Anderson-Bjork method (Ganchovski & Traykov, 2023), written in C.
 It finds the root of a single nonlinear equation `f(x) = 0` within the specified interval `[x1, x2]`.
 
 ### Installation
@@ -107,4 +107,4 @@ Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz (1.50 GHz) with 16.0 GB RAM
 Windows 11 Home  
 numpy Version: 2.4.4  
 scipy Version: 1.17.1  
-pymodab Version: 1.0.0  
+pymodab Version: 1.0.1  

@@ -47,10 +47,6 @@ def _load_library():
     lib.modAB_find_root.argtypes = [FUNC_TYPE, c_double, c_double, c_double, c_double, c_int]
     lib.modAB_find_root.restype = c_double
 
-    # Configure modAB_default
-    lib.modAB_default.argtypes = [FUNC_TYPE, c_double, c_double]
-    lib.modAB_default.restype = c_double
-
     # Configure get_evaluation_count
     lib.get_evaluation_count.argtypes = []
     lib.get_evaluation_count.restype = c_int
@@ -115,40 +111,6 @@ def find_root(
     return _lib.modAB_find_root(c_func, x1, x2, atol, rtol, max_iter)
 
 
-def find_default(f: Callable[[float], float], x1: float, x2: float) -> float:
-    """
-    Find the root of f(x) = 0 within the interval [x1, x2] using default tolerances.
-
-    This is a convenience function that calls find_root with default parameters:
-    atol=1e-14, rtol=1e-14, max_iter=200.
-
-    Parameters
-    ----------
-    f : callable
-        A continuous function of one variable.
-    x1 : float
-        Left endpoint of the bracket interval.
-    x2 : float
-        Right endpoint of the bracket interval.
-
-    Returns
-    -------
-    float
-        The root of f(x) = 0 within [x1, x2].
-        Returns NaN if no root is found or if f(x1) and f(x2) have the same sign.
-
-    Examples
-    --------
-    >>> import math
-    >>> from pymodab import find_default
-    >>> root = find_default(lambda x: x**2 - 2, 1, 2)
-    >>> print(f"{root:.10f}")
-    1.4142135624
-    """
-    c_func = FUNC_TYPE(f)
-    return _lib.modAB_default(c_func, x1, x2)
-
-
 def get_evaluation_count() -> int:
     """
     Get the number of function evaluations from the last root-finding call.
@@ -157,12 +119,13 @@ def get_evaluation_count() -> int:
     -------
     int
         The number of times the function was evaluated during the last
-        call to find_root or find_default.
+        call to find_root.
 
     Examples
     --------
-    >>> from pymodab import find_default, get_evaluation_count
-    >>> root = find_default(lambda x: x**2 - 2, 1, 2)
+    >>> from pymodab import find_root, get_evaluation_count
+    >>> root = find_root(lambda x: x**2 - 2, 1, 2)
     >>> print(f"Evaluations: {get_evaluation_count()}")
+    Evaluations: 11
     """
     return _lib.get_evaluation_count()

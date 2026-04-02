@@ -9,7 +9,7 @@ Improvements of the Modified Anderson-Björck (modAB) Root-Finding Algorithm.
 Preprints 2026, 2026032190. https://doi.org/10.20944/preprints202603.2190.v1
 """
 
-from .modab import find_root, find_default, get_evaluation_count
+from .modab import find_root, get_evaluation_count
 
 __version__ = "1.0.0"
-__all__ = ["find_root", "find_default", "get_evaluation_count"]
+__all__ = ["find_root", "get_evaluation_count"]
