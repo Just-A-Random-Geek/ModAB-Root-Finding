@@ -2,6 +2,7 @@
 
 A fast and robust root-finding library for Python, using the Modified Anderson-Bjork method (Ganchovski & Traykov, 2023), written in C.
 It finds the root of a single nonlinear equation `f(x) = 0` within the specified interval `[x1, x2]`.
+The library works in Windows, Linux and Mac OS.
 
 ### Installation
 
