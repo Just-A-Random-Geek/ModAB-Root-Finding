@@ -110,8 +110,3 @@ EXPORT double modAB_find_root(double (*f)(double), double x1, double x2, double 
     evaluation_count = maxIter + 2;
     return NAN;
 }
-
-// Convenience wrapper with default tolerances
-EXPORT double modAB_default(double (*f)(double), double x1, double x2) {
-    return modAB_find_root(f, x1, x2, 1e-14, 1e-14, 200);
-}
