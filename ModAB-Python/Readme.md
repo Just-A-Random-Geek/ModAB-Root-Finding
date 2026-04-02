@@ -13,7 +13,7 @@ pip install pymodab
 
 ```python
 import math
-from pymodab import find_root, find_default, get_evaluation_count
+from pymodab import find_root, get_evaluation_count
 
 # Find the root of cos(x) - x = 0 in [0, 1]
 root = find_root(lambda x: math.cos(x) - x, 0, 1, 1e-3, 1e-3, 10)
