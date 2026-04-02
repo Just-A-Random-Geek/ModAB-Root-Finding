@@ -8,8 +8,8 @@ Available in **C**, **C#**,  **Python**, **Julia**, **Zig** and **C++ (ROOT.CERN
 ## Features
 
 - **Guaranteed convergence** - Bracketing approach ensures the root is always found.
-- **Great performance** - Fewer function evaluations than Brent, Ridders, and other popular methods. Being simple and lightweight, it adds very little computational overhead per iteration.
-- **Worst-case optimality** - Retains the worst case optimality of Bisection for the hard cases.
+- **Great performance** - Fewer function evaluations than Brent, Ridders, and other popular methods. Being simple and lightweight, it has very little computational overhead per iteration.
+- **Worst-case optimality** - Retains the worst-case optimality of Bisection for the hard cases.
 - **Cross-platform** - Python package that works on Windows, Linux, and macOS.
 - **Multiple languages** - Use in your preferred environment.
 - **Extensive testing and benchmarking** - The algorithm is benchmark against a broad set of test functions of many different types.
