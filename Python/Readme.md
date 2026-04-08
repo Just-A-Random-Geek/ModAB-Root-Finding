@@ -71,7 +71,7 @@ MIT License
 ### Benchmark results
 
 The modAB algorithm is benchmarked against the available algorithms in Python/SciPy in respect to number of evaluations and execution times:
-* `bisect`- Bisection method
+* `bisect` - Bisection method
 * `brentq` - Brent’s method (van Wijngaarden–Dekker–Brent, 1973)
 * `brenth` - Brent–Dekker variant (hyperbolic extrapolation variant, 1975)
 * `ridder` - Ridder’s method (1979)
