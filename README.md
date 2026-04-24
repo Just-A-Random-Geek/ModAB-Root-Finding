@@ -41,11 +41,11 @@ MultiFloats.jl - 			https://github.com/dzhang314/MultiFloats.jl		- Julia
 
 ## References
 
-1. Ganchovski N. Structural Analysis by Functional Modelling in the Cloud.  PhD Thesis **2025**, UACEG, Sofia
+1. Ganchovski N. Structural Analysis by Functional Modeling in the Cloud.  PhD Thesis **2025**, UACEG, Sofia
 
 2. Ganchovski, N.; Traykov, A. (2023). "Modified Anderson-Björck's method for solving non-linear equations in structural mechanics." *IOP Conference Series: Materials Science and Engineering*, 1276(1), 012010. [DOI: 10.1088/1757-899X/1276/1/012010](https://doi.org/10.1088/1757-899X/1276/1/012010)
 
-3. Ganchovski, N.; Smith, O.; Rackauckas, C.; Tomov, L.; Traykov, A. (2026). "Improvements of the Modified Anderson-Björck (modAB) Root-Finding Algorithm." *Preprints*, 2026032190. [DOI: 10.20944/preprints202603.2190.v1](https://doi.org/10.20944/preprints202603.2190.v1)
+3. Ganchovski, N.; Smith, O.; Rackauckas, C.; Tomov, L.; Traykov, A. Improvements to the Modified Anderson–Björck (modAB) Root-Finding Algorithm. Algorithms 2026, 19, 332. https://doi.org/10.3390/a19050332
 
 ## Contributing
 
