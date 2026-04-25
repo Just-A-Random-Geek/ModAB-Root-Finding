@@ -1,9 +1,12 @@
 ### Results summary
+
 Code and benchmarks are based on [Roots-Fortran](https://github.com/jacobwilliams/roots-fortran) 
 by [Jacob Williams](https://github.com/jacobwilliams) fork:
 https://github.com/Proektsoft-EOOD/roots-fortran
 
-
+<img height="500" alt="image" src="https://github.com/user-attachments/assets/69749408-a623-4b3e-bff2-85c37de666a1" />
+ 
+ Table:
     | bisect | falsep | abkk | barycentric | zhang | ridders | illinois | blendtf | itp | bdqrf | rbp | modab | pegasus | toms748 | brent | brentq | a&b | brenth | muller | chandr
  -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --
 Sum | 10130 | 89207 | 5080 | 8603 | 3887 | 3489 | 5319 | 6322 | 3925 | 3501 | 24279 | 2666 | 5996 | 3482 | 3229 | 3227 | 13968 | 3167 | 4371 | 2634
