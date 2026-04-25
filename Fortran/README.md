@@ -1,6 +1,6 @@
 ### Results summary
 
-Code and benchmarks are based on [Roots-Fortran](https://github.com/jacobwilliams/roots-fortran) 
+Code and benchmarks are based on this [Roots-Fortran](https://github.com/jacobwilliams/roots-fortran) 
 by [Jacob Williams](https://github.com/jacobwilliams) fork:   
 https://github.com/Proektsoft-EOOD/roots-fortran
 
@@ -8,7 +8,7 @@ Relative number of evaluations to modAB:
 
 <img height="500" alt="image" src="https://github.com/user-attachments/assets/69749408-a623-4b3e-bff2-85c37de666a1" />
  
- Table:
+ Summary of results from the 157 function tests:
     | bisect | falsep | abkk | barycentric | zhang | ridders | illinois | blendtf | itp | bdqrf | rbp | modab | pegasus | toms748 | brent | brentq | a&b | brenth | muller | chandr
  -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --
 Sum | 10130 | 89207 | 5080 | 8603 | 3887 | 3489 | 5319 | 6322 | 3925 | 3501 | 24279 | 2666 | 5996 | 3482 | 3229 | 3227 | 13968 | 3167 | 4371 | 2634
@@ -21,3 +21,6 @@ Worst | 92 | 108 | 1 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 10 | 0 | 0 | 0 | 0 | 0 | 8 |
 Median | 47.0 | 57.0 | 20.0 | 30.0 | 16.0 | 14.0 | 12.0 | 26.0 | 13.0 | 14.0 | 12.0 | 11.0 | 11.0 | 11.0 | 11.0 | 11.0 | 10.0 | 10.0 | 10.0 | 10.0
 Std Dev | 10.7 | 480.4 | 15.1 | 39.6 | 10.2 | 10.8 | 27.4 | 15.5 | 12.3 | 10.3 | 417.8 | 6.4 | 37.0 | 17.9 | 15.1 | 15.1 | 202.1 | 15.2 | 34.2 | 6.8
 Std Error | 0.72 | 32.17 | 1.01 | 2.65 | 0.68 | 0.73 | 1.83 | 1.04 | 0.82 | 0.69 | 27.98 | 0.43 | 2.48 | 1.20 | 1.01 | 1.01 | 13.53 | 1.02 | 2.29 | 0.46
+
+Detailed results are available here:
+[Test_results.pdf](/Fortran/results/Test_results.pdf)
