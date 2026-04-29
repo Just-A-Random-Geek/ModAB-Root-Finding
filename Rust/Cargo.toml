@@ -1,0 +1,11 @@
+[package]
+name = "modab_bench"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+roots = "0.0.8"
+
+[profile.release]
+lto = true
+codegen-units = 1
