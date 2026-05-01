@@ -254,7 +254,7 @@ namespace Root.Benchmark
             },
             new() {
                 Name = "f49",
-                F = (x) => x <= 0 ? -Math.Pow(x, 3) - x - 1 : Math.Pow(x, 1/3) - x - 1,
+                F = (x) => x <= 0 ? -Math.Pow(x, 3) - x - 1 : Math.Pow(x, 1.0/3.0) - x - 1,
                 a = -1, b = 1
             },
             new() {
@@ -499,7 +499,7 @@ namespace Root.Benchmark
                     case 2: Console.WriteLine("Evaluation count"); break;
                 }
                 Console.WriteLine("Func;   bs;    fp;   ill;    ab;   ITP;   rid;    br;  modAB_old;  modAB");
-                const int methodCount = 9;
+                const int methodCount = 8;
                 var sum = new int[methodCount];
                 var max = new int[methodCount];
                 var mean = new double[methodCount];
@@ -518,8 +518,7 @@ namespace Root.Benchmark
                             4 => Solver.ITP(p.F, p.a, p.b, tol, tol),
                             5 => Solver.Ridders(p.F, p.a, p.b, tol, tol),
                             6 => Solver.Brent(p.F, p.a, p.b, tol, tol),
-                            7 => Solver.ModAB_old(p.F, p.a, p.b, tol),
-                            8 => Solver.ModAB(p.F, p.a, p.b, tol, tol),
+                            7 => Solver.ModAB(p.F, p.a, p.b, tol, tol),
                             _ => throw new NotImplementedException()
                         };
                         if (i == 0)
