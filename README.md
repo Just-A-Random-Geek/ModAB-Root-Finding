@@ -14,7 +14,7 @@ Available in **C**, **C#**,  **Python**, **Julia**, **Zig** and **C++ (ROOT.CERN
 - **Multiple languages** - Use in your preferred environment.
 - **Extensive testing and benchmarking** - The algorithm is benchmark against a broad set of test functions of many different types.
 
-## Algorithm Overview
+## 📕 Algorithm Overview
 
 The ModAB algorithm combines the reliability of bisection with the speed of the secant method:
 
@@ -26,11 +26,11 @@ The ModAB algorithm combines the reliability of bisection with the speed of the 
 
 This hybrid approach achieves superlinear convergence while maintaining the worst-case optimality of bisection.
 
-## License
+## 📄 License
 
 MIT License - see the [LICENSE](C/LICENSE) file for details.
 
-## Implementations in other software/libraries
+## 🧮 Implementations in other software/libraries
 
 Calcpad - 					https://calcpad.eu   - C#  
 Root-Fortran - 				https://github.com/jacobwilliams/roots-fortran	- Fortran  
@@ -40,7 +40,7 @@ JuliaMath/Roots.jl -		https://github.com/JuliaMath/Roots.jl			- Julia
 MultiFloats.jl - 			https://github.com/dzhang314/MultiFloats.jl		- Julia  
 PyModAB - 			https://pypi.org/project/pymodab/		- Python/C
 
-## References
+## 📚 References
 
 1. Ganchovski N. Structural Analysis by Functional Modeling in the Cloud.  PhD Thesis **2025**, UACEG, Sofia
 
@@ -48,6 +48,6 @@ PyModAB - 			https://pypi.org/project/pymodab/		- Python/C
 
 3. Ganchovski, N.; Smith, O.; Rackauckas, C.; Tomov, L.; Traykov, A. Improvements to the Modified Anderson–Björck (modAB) Root-Finding Algorithm. Algorithms 2026, 19, 332. https://doi.org/10.3390/a19050332
 
-## Contributing
+## 🐝Contributing
 
 Contributions are welcome. You can open an issue or submit a pull request.
