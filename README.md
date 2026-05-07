@@ -5,7 +5,7 @@ This repository provides efficient implementations of the **Modified Anderson-Bj
 
 Available in **C**, **C#**,  **Python**, **Julia**, **Zig** and **C++ (ROOT.CERN framework)**.
 
-## Features
+## ✨ Features
 
 - **Guaranteed convergence** - Bracketing approach ensures the root is always found.
 - **Great performance** - Fewer function evaluations than Brent, Ridders, and other popular methods. Being simple and lightweight, it has very little computational overhead per iteration.
