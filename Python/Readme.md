@@ -4,13 +4,14 @@ A fast and robust root-finding library for Python, using the Modified Anderson-B
 It finds the root of a single nonlinear equation `f(x) = 0` within the specified interval `[x1, x2]`.  
 Works in Windows, Linux and Mac OS.
 
-### Installation
+### 💾 Installation
 
 ```bash
 pip install pymodab
 ```
+Download stats: https://pepy.tech/projects/pymodab
 
-### Usage
+### 🛠️ Usage
 
 ```python
 import math
@@ -33,7 +34,7 @@ print(f"Evaluations: {get_evaluation_count()}")
 print(f"Error:       {root**2 - 2}")
 ```
 
-### API
+### 🔌API
 
 #### `find_root(f, x1, x2, atol=1e-14, rtol=1e-14, max_iter=200)`
 
@@ -52,7 +53,7 @@ Find the root of `f(x) = 0` within the interval `[x1, x2]`.
 
 Returns the number of function evaluations from the last root-finding call.
 
-### Algorithm
+### 📕 Algorithm
 
 Modified Anderson-Björck's method is a new robust and efficient bracketing root-finding algorithm. It combines bisection with Anderson-Björk's method to achieve both fast performance and worst-case optimality.
 
@@ -64,11 +65,11 @@ https://iopscience.iop.org/article/10.1088/1757-899X/1276/1/012010/pdf
 Ganchovski, N.; Smith, O.; Rackauckas, C.; Tomov, L.; Traykov, A. Improvements to the Modified Anderson–Björck (modAB) Root-Finding Algorithm. Algorithms 2026, 19, 332. 
 https://doi.org/10.3390/a19050332
 
-### License
+### 📄 License
 
 MIT License
 
-### Benchmark results
+### ⏱ Benchmark results
 
 The modAB algorithm is benchmarked against the available algorithms in Python/SciPy in respect to number of evaluations and execution times:
 * `bisect` - Bisection method
